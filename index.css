@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #1b262c;
+  color: #ccc;
+}
+
+#container {
+  display: flex;
+  height: 100%;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+button {
+  border: 0;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
