@@ -29,3 +29,9 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+
+a {
+  color: #eee;
+  font-weight: 600;
+  text-decoration: none;
+}
