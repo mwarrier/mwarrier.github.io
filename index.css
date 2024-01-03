@@ -2,6 +2,7 @@ html,
 body {
   background-color: #1e2124;
   height: 100vh;
+  overflow-y: hidden;
 }
 
 #container {
