@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cascadia Code", "Fira Code", "JetBrains Mono", "Consolas",
+    "Monaco", "Courier New", monospace;
+  line-height: 1.6;
+  color: #e0e0e0;
+  background: #0d0d0d;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid #2a2a2a;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #00d4ff 0%, #7c3aed 100%);
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #00d4ff;
+  font-weight: 500;
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #00d4ff;
+  font-weight: 600;
+}
+
+.about p {
+  color: #b0b0b0;
+  font-size: 1.05rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.skill {
+  background: linear-gradient(135deg, #00d4ff 0%, #7c3aed 100%);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+}
+
+.experience-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+}
+
+.experience-item h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.experience-item .company {
+  color: #00d4ff;
+  font-weight: 500;
+}
+
+.experience-item p {
+  color: #909090;
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 2px solid #00d4ff;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.contact-links a:hover {
+  background: #00d4ff;
+  color: #0d0d0d;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
